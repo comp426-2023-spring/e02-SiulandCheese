@@ -60,23 +60,3 @@
   .slider.round:before {
     border-radius: 50%;
   }
-
-
-.PlayType { 
-    text-align: center;
-}
-
-.Toggle { 
-    display: none;
-}
-
-.resultPopup { 
-  display: none; 
-}
-body {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}

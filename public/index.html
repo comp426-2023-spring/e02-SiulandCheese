@@ -1,10 +1,66 @@
 <html>
+    
     <head>
-        <title>Rock</title>
+        <title>Rock Paper Scissors (Lizard Spock???)</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
+        <script src="./scripts.js"></script>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
+        <!-- Toggle for RPS vs RPSLS --> 
+        <div class = "PlayType"> 
+            <h2> Click to Play Against An Opponent</h2>
+            <label class="switch">
+                <input type="checkbox" onChange="toggleOpponent()">
+                <span class="slider"></span>
+            </label>
+    
+            </div>
 
+        <!-- Toggle for RPS vs RPSLS --> 
+        <div class = "PlayType"> 
+        <h2> Click to Play Extended Version</h2>
+        <label class="switch">
+            <input type="checkbox" onChange="toggleRPS()">
+            <span class="slider"></span>
+        </label>
+
+        </div>
+
+
+
+    <!-- Rock  -->
+    <button onclick="playRock()"> Choose Rock! </button>
+
+    <!-- Paper  -->
+    <button onclick="playPaper()"> Choose Paper! </button>
+
+    <!-- Scissors  -->
+    <button onclick="playScissors()"> Choose Scissors! </button>
+
+        <div class = "Toggle">
+
+            <!-- Lizard (toggle) -->
+            <button onclick="playLizard()"> Choose Lizard! </button>
+
+            <!-- Spock (toggle)  -->
+            <button onclick="playSpock()"> Choose Spock! </button>
+
+        </div>
+
+    <!-- Result --> 
+    <div class="resultPopup">
+        <p id="result"></p>
+        <p id="player"></p>
+        <p id="opponent"></p>
+
+         <!-- Play again ?  -->
+        <button onClick="reset()" class="startOverBtn">Start Over</button>
+    </div>
+
+
+   
+    <button> Play again?  </button>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
 
