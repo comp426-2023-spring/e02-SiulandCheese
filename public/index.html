@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Rock Paper Scissors (Lizard Spock???)</title>
@@ -7,41 +7,41 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <!-- Toggle for RPS vs RPSLS --> 
-        <div class = "PlayType"> 
+        <!-- Toggle for RPS vs RPSLS -->
+        <div class="PlayType">
             <h2> Click to Play Against An Opponent</h2>
             <label class="switch">
                 <input type="checkbox" onchange="toggleOpponent()">
                 <span class="slider"></span>
             </label>
         </div>
-        <!-- Toggle for RPS vs RPSLS --> 
-        <div class = "PlayType"> 
+        <!-- Toggle for RPS vs RPSLS -->
+        <div class="PlayType">
         <h2> Click to Play Extended Version</h2>
         <label class="switch">
-            <input type="checkbox" onChange="toggleRPS()">
+            <input type="checkbox" onchange="toggleRPS()">
             <span class="slider"></span>
         </label>
         </div>
     <!-- Rock  -->
-    <button onclick="playRock()"> Choose Rock! </button>
+    <button type="submit" onclick="playRock()"> Choose Rock! </button>
     <!-- Paper  -->
-    <button onclick="playPaper()"> Choose Paper! </button>
+    <button type="submit" onclick="playPaper()"> Choose Paper! </button>
     <!-- Scissors  -->
-    <button onclick="playScissors()"> Choose Scissors! </button>
-        <div class = "Toggle">
+    <button type="submit" onclick="playScissors()"> Choose Scissors! </button>
+        <div class="Toggle">
             <!-- Lizard (toggle) -->
-            <button onclick="playLizard()"> Choose Lizard! </button>
+            <button type="submit" onclick="playLizard()"> Choose Lizard! </button>
             <!-- Spock (toggle)  -->
-            <button onclick="playSpock()"> Choose Spock! </button>
+            <button type="submit" onclick="playSpock()"> Choose Spock! </button>
         </div>
-    <!-- Result --> 
+    <!-- Result -->
     <div class="resultPopup">
         <p id="result"></p>
         <p id="player"></p>
         <p id="opponent"></p>
          <!-- Play again ?  -->
-        <button onclick="reset()" class="startOverBtn">Start Over</button>
+        <button type="submit" onclick="reset()" class="startOverBtn">Start Over</button>
     </div>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
