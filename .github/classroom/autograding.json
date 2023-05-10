@@ -55,7 +55,7 @@
       "setup": "",
       "run": "ls docs",
       "input": "",
-      "output": "01-interface",
+      "output": "01-Interface",
       "comparison": "included",
       "timeout": 10,
       "points": 25000
@@ -65,7 +65,7 @@
       "setup": "",
       "run": "ls docs",
       "input": "",
-      "output": "02-result",
+      "output": "02-Result",
       "comparison": "included",
       "timeout": 10,
       "points": 25000
